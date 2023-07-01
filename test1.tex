@@ -1,0 +1,30 @@
+%こねこ。のテンプレート（ver 2.2）
+%Copyright © 2021-2022 こねこ。 All Rights Reserved.
+\documentclass[a4paper, 10.5pt, dvipdfmx]{jsarticle}
+\usepackage[top=20truemm, bottom=20truemm, left=20truemm, right=20truemm]{geometry}
+
+\usepackage{preamble}
+%\usepackage{preamble_tikz}
+%日本語を使うときは必須
+\usepackage{jpreamble}
+%化学用追加パッケージ
+%\usepackage{prechemistry}
+%情報用追加パッケージ
+\usepackage{preprog}
+%フォント操作用追加パッケージ
+\usepackage{prefonts}
+\setminchofont{tmincho.ttc}
+\renewcommand{\theequation}{\thesection.\arabic{equation}}\makeatletter\@addtoreset{equation}{section}\makeatother
+
+\title{\sf{}}
+\author{}
+\date{\today}\vspace{-0.5cm}
+\begin{document}
+\maketitle
+
+\begin{figure}[H]
+  \centering
+  \input{hoge.tex}
+\end{figure}
+
+\end{document}
